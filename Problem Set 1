@@ -1,0 +1,78 @@
+Problem 1:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        scan.nextLine();
+        String text = scan.nextLine();
+        char character = scan.next().charAt(0);
+        System.out.println(num);
+        System.out.println(text);
+        System.out.println(character);
+    }
+}
+
+Problem 2:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num1 = scan.nextInt();
+        int num2 = scan.nextInt();
+        int num3 = scan.nextInt();
+        int result = num1 + num2 + num3;
+        if(result == 180){
+            System.out.println("Triangle can be Formed");
+        }else if(result < 180){
+            System.out.println("Triangle cannot be Formed");
+        }else {
+            System.out.println("Triangle cannot be Formed");
+        };
+    }
+}
+
+Problem 3:
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        if(num >= 90){
+            System.out.println("Grade A");
+        }else if(num >= 80){
+            System.out.println("Grade B");
+        }else if(num >= 60){
+            System.out.println("Grade C");
+        }else if(num >= 35){
+            System.out.println("Grade D");
+        }else {
+            System.out.println("Fail");
+        };
+    }
+}
+
+Problem 4:
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        switch(num){
+            case 30:
+                System.out.println("Medium");
+                break;
+            case 38:
+                System.out.println("Large");
+                break;
+            case 42:
+                System.out.println("XLarge");
+                break;
+            case 29:
+                System.out.println("small");
+                break;
+            default:
+                System.out.println("size is not Invalid");
+                break;
+        }
+    }
+}
