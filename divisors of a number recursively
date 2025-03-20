@@ -1,0 +1,15 @@
+class Main {
+    public static int countZero(int n,int d){
+      if(d == n){
+          return n;
+      }
+      if(n%d == 0){
+        System.out.print(d+" ");  
+      }
+        return countZero(n,d+1);
+    
+    }
+    public static void main(String[] args) {
+        System.out.print(countZero(12,1));
+    }
+}
